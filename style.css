@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #E3F0F2;
+    padding: 10px;
+    /*jaba samma parent container ma padding hudaina, taba samma child(todo_box) ma effectively margin lagdaina*/
+
+    position: relative;
+
+}
+
+#error_box {
+    width: 90%;
+    max-width: 600px;
+    /* margin: 90px auto 10px; */
+    padding: 10px 20px;
+    background-color: #EFFCFE;
+    border-radius: 10px;
+
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: none;
+    color: red;
+}
+
+
+.todo_box {
+    width: 90%;
+    max-width: 600px;
+    /* height: 1500px; */
+    margin: 100px auto 20px;
+    padding: 40px 30px;
+    background-color: #EFFCFE;
+    border-radius: 10px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header h1 {
+    font-size: 30px;
+    /* display: inline-block; */
+    background-image: linear-gradient(120deg, #21D1F3, #4361F5);
+    background-clip: text;
+    color: transparent;
+}
+
+.header i {
+    color: #4361F5;
+    font-size: 25px;
+    margin-left: 15px;
+}
+
+.search_container {
+    width: 100%;
+    margin: 30px auto 20px;
+    background-color: #D9EBFD;
+
+    display: flex;
+    align-items: center;
+
+    border-radius: 4px;
+}
+
+input#search_box {
+    border: none;
+    outline: none;
+
+    flex: 1;
+    background-color: transparent;
+
+    padding: 15px 20px;
+    color: #011314;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+
+
+}
+
+input#search_box:focus {
+    border-bottom: 2px solid #4361F5;
+}
+
+input#search_box::placeholder {
+    color: #011314;
+
+}
+
+button#add_btn {
+    border: none;
+    outline: none;
+
+    background-color: #21D1F3;
+
+    padding: 15px 20px;
+    font-size: 15px;
+
+    font-weight: 600;
+    color: white;
+
+    cursor: pointer;
+
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+
+}
+
+.item {
+    background-color: #D9EBFD;
+    padding: 5px 10px;
+    min-height: 50px;
+    border-radius: 4px;
+
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    margin-bottom: 10px;
+}
+
+.item i {
+    color: #4361F5;
+    cursor: pointer;
+}
+
+.item i:first-child {
+    font-size: 20px;
+}
+
+.item i:nth-of-type(2) {
+    font-size: 18px;
+    margin: auto 5px;
+}
+
+.item i:last-child {
+    font-size: 22px;
+
+}
+
+.item p {
+    flex: 1;
+    text-align: justify;
+    padding: 5px;
+}

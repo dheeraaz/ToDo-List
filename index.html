@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- external css file -->
+    <link rel="stylesheet" href="style.css">
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- external js file -->
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <div id="error_box"><p>You cannot enter empty task.</p></div>
+        
+        <div class="todo_box">
+            <div class="header">
+                <h1>ToDo List</h1><i class="fa-solid fa-clipboard-list"></i>
+            </div>
+
+            <div class="search_container">
+                <input type="text" placeholder="Enter your task" id="search_box">
+                <button id="add_btn">ADD</button>
+            </div>
+
+            <div class="todo_lists">
+                <!-- 
+                <div class="item">
+                   <i class="fa-regular fa-square first"></i>
+                   <p>${todoInput}</p>` + `<i class="fa-solid fa-pen-to-square second"></i> 
+                    <i class="fa-solid fa-xmark last"></i>
+                </div>
+                 -->
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
