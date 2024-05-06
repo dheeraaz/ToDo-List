@@ -6,8 +6,7 @@ This ToDo List application is a simple task management tool built using vanilla 
 
 
 ## Screenshot
-
-![SS](https://github.com/dhirajacharya/ToDo-List/assets/84019172/2aa124ba-4e63-4c9c-9251-db6c47d3a769)
+![SS](https://github.com/dhirajacharya/ToDo-List/assets/84019172/ae006cd6-2963-46f9-b1ae-6421b05c2bd1)
 
 ## Features
 
