@@ -71,7 +71,7 @@ function toggleTodo(e) {
         e.target.classList.add("fa-solid", "fa-square-check");
 
         e.target.nextSibling.style.textDecoration = "line-through";
-        e.target.nextSibling.style.textDecorationColor = "white";
+        e.target.nextSibling.style.textDecorationColor = "blue";
 
         --countItem;
         updateCount();
@@ -102,7 +102,7 @@ todoLists.addEventListener("click", (e) => {
         striked_P = e.target.previousElementSibling.previousElementSibling;
         
         //text strike through xaina vaney matrai count update garni, text striketrhough huda aafai count ghati sakeko hunxa
-        if(striked_P.style.textDecorationColor!=="white"){ 
+        if(striked_P.style.textDecorationColor!=="blue"){ 
               --countItem;
                updateCount();
         }
@@ -116,7 +116,7 @@ todoLists.addEventListener("click", (e) => {
         searchBox.value = e.target.previousElementSibling.textContent;
 
         striked_P = e.target.previousElementSibling;
-        if(striked_P.style.textDecorationColor!=="white"){
+        if(striked_P.style.textDecorationColor!=="blue"){
             --countItem;
             updateCount();
         }
